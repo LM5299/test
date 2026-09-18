@@ -1,0 +1,161 @@
+
+*{  margin:0;
+    padding:0;
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #FAF8F4;
+    color: #17130F;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    display: block; 
+    max-width: 100%; 
+    height: auto; }
+
+/* ============ NAV ============ */
+nav {
+    background-color: #0A0906;
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+    padding: 16px 6%;
+    border-top: 1px solid #2A241D;
+    border-bottom: 1px solid #2A241D;
+}
+
+nav a {
+    color: #D8D2C8;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    color: #FF7A29;
+    border-bottom-color: #FF7A29;
+}
+
+
+/* ============ HEADER (About / Mission / Vision / Founder) ============ */
+
+header {
+    padding: 0 0 70px;
+}
+
+header > img:first-of-type {
+    width: 100%;
+    max-width: none;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 0;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #17130F;
+    max-width: 700px;
+    margin: 0 auto 18px;
+    padding: 0 6%;
+    border-left: 4px solid #FF7A29;
+    padding-left: 18px;
+}
+
+header img:last-of-type {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #FF7A29;
+    margin: 10px auto 14px;
+}
+
+
+/* ============ MAIN ============ */
+
+main {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 70px 6%;
+}
+
+
+/* Gallery + Donations headings (both are bare <h1> inside <main>) */
+main h1:nth-of-type(1) {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 600;
+    font-size: 1.9rem;
+    color: #17130F;
+    border-left: 4px solid #FF7A29;
+    padding-left: 18px;
+    margin-bottom: 22px;
+}
+
+main h1:nth-of-type(2) {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 600;
+    font-size: 1.9rem;
+    color: #17130F;
+    border-left: 4px solid #FF7A29;
+    padding-left: 18px;
+    margin: 60px 0 8px;
+}
+
+/* Gallery images */
+main img {
+    display: inline-block;
+    width: 31.5%;
+    height: 220px;
+    object-fit: cover;
+    margin: 0 2.25% 16px 0;
+    border: 1px solid #E7E1D6;
+    filter: grayscale(15%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    vertical-align: top;
+}
+
+main img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.015);
+}
+
+main img:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+
+/* ============ FOOTER ============ */
+
+footer {
+    background-color: #0A0906;
+    border-top: 1px solid #2A241D;
+}
+
+footer p {
+    color: #6B6560;
+    text-align: center;
+    padding: 26px 6%;
+    font-size: 0.85rem;
+}
+
+/*Mobile responsive design*/
+@media only screen and (max-width: 600px){
+    .main-nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+    }
+}
